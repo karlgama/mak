@@ -1,0 +1,318 @@
+    * {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        box-sizing: border-box;
+        outline: 0;
+        color: #000;
+        list-style: none;
+    }
+    
+    body {
+        font-family: 'Courier New', Courier, monospace;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    header {
+        width: 100%;
+        height: 50px;
+        z-index: 4;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+        position: fixed;
+        background-color: rgba(0, 0, 0, .9);
+    }
+    /* variaveis */
+    
+     :root {
+        --azul-principal: rgb(21, 101, 192);
+    }
+    /* menu */
+    
+    #menu ul li {
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        font-size: 18px;
+        margin-left: 10px;
+        height: 100%;
+    }
+    
+    #menu ul {
+        text-align: left;
+        height: 100%;
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+    
+    #menu {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    
+    #menu nav a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    #menu nav {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .sublinhado {
+        width: 0px;
+        height: 2px;
+        background-color: #0362fc;
+        margin-top: 0px;
+        transition: width 1s;
+    }
+    
+    nav ul li:hover>.sublinhado {
+        width: 100%;
+    }
+    /*slide*/
+    
+    #slide {
+        padding-top: 50px;
+    }
+    
+    .swiper-container {
+        width: 100%;
+        height: 500px;
+        border-bottom: var( --azul-principal) 2px solid;
+        z-index: 4;
+    }
+    
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    
+    .swiper-slide.slide1 {
+        background: url(../img/slide1.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .swiper-slide.slide2 {
+        background: url(../img/slide2.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .swiper-slide.slide3 {
+        background: url(../img/slide3.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .text-box {
+        background-color: rgba(0, 0, 0, .9);
+        box-sizing: border-box;
+        padding: 15px;
+        border-radius: 5px;
+        margin-top: 40vh;
+    }
+    
+    .text-box h2 {
+        color: white;
+    }
+    
+    .text-box p {
+        color: white;
+    }
+    /* empresa */
+    
+    #empresa h2 {
+        text-align: center;
+    }
+    
+    #empresa {
+        max-width: 100%;
+        box-sizing: border-box;
+        /* background-color: var(--azul-principal); */
+        border-radius: 5px;
+        padding: 10px;
+    }
+    /* simulação */
+    
+    #simulation {
+        height: 700px;
+        width: 100%;
+        background-image: url('../img/business.jpg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        padding-top: 5px;
+    }
+    
+    #simulation h2 {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .title-simulation {
+        width: 450px;
+        height: 50px;
+        background-color: rgba(255, 255, 255, .9);
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+    }
+    
+    #simulation form label {
+        margin-top: 5px;
+    }
+    
+    #simulation form {
+        width: 450px;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        padding-left: 50px;
+        padding-top: 10px;
+        border: solid var(--azul-principal) 2px;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+    
+    #simulation form h3 {
+        font-size: 20px;
+    }
+    
+    #simulation form label {
+        cursor: pointer;
+        margin-left: 5px;
+    }
+    
+    #simulation form select {
+        width: 100px;
+    }
+    
+    #simulation form select option {
+        width: 100px;
+    }
+    
+    #email {
+        width: 200px;
+    }
+    
+    .form-row {
+        min-height: 80px;
+        height: auto;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .cell {
+        /* background-color: red; */
+        width: 200px;
+    }
+    
+    .cell-right {
+        width: 150px;
+        margin-left: 20px;
+    }
+    
+    .cell-right select {
+        width: 100px;
+    }
+    
+    #phone {
+        width: 200px;
+    }
+    
+    #details {
+        width: 80%;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #details h3 {
+        text-align: center;
+    }
+    /*footer*/
+    
+    footer {
+        text-align: center;
+        height: 60px;
+        background-color: var(--azul-principal);
+        font-weight: bold;
+        color: #fff;
+    }
+    
+    footer p {
+        padding: 0;
+        margin: 0;
+        color: #fff;
+    }
+    /*contact*/
+    
+    #form-contact {
+        width: 500px;
+        height: 550px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 20px;
+        border: solid var(--azul-principal) 2px;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+    
+    #contact {
+        padding-top: 80px;
+        /* background-color: red; */
+        height: 500px;
+    }
+    
+    #contact form label {
+        cursor: pointer;
+        margin-left: 5px;
+    }
+    
+    #contact form select {
+        width: 100px;
+    }
+    
+    #contact form select option {
+        width: 100px;
+    }
+    
+    #obs {
+        resize: none;
+    }
+    
+    #textarea-obs {
+        text-align: center;
+    }
+    
+    #btn-send {
+        width: 100%;
+        height: 50px;
+        margin-top: 10px;
+    }

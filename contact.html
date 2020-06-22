@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Contato</title>
+</head>
+
+<body>
+    <div w3-include-html="./components/header.html"></div>
+    <div id="contact" id="form-group ">
+        <form id="form-contact" name="form-contact" method="post" action="./modules/insert.php?controller=contacts">
+
+            <div class="form-row">
+                <div class="cell">
+                    <label for="name">Nome</label>
+                    <input name="name" required class="form-control" id="name" type="text">
+                </div>
+                <div class="cell-right">
+                    <label for="email">Email</label>
+                    <input name="email" class="form-control" id="email" type="email">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="cell">
+                    <label for="phone" required>Telefone/Celular</label>
+                    <input name="phone" class="form-control" id="phone" type="tel">
+                </div>
+                <div class="cell cell-right">
+                    <label for="address" required>Endereço</label>
+                    <input name="address" class="form-control" id="address" type="text">
+                </div>
+            </div>
+            <div class="form-row">
+                <div id="textarea-obs">
+                    <label for="obs">Observação</label>
+                    <textarea class="form-control" name="obs" id="obs" cols="50" rows="10"></textarea>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <input id="btn-send" name="btn-enviar" onclick="message()" type="submit" value="Enviar" class="btn btn-success">
+            </div>
+
+        </form>
+
+        <script src="js/main.js"></script>
+</body>
+
+</html>

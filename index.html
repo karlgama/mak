@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Maktub</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+    <script>
+        function message() {
+            alert("Obrigado! em breve um representante entrara em contato")
+        }
+    </script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <div w3-include-html="./components/header.html"></div>
+    <!--Swiper container-->
+    <div class="swiper-container" id="slide">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide1">
+                <div class="text-box">
+                    <h2>Nosso foco é a sua saúde</h2>
+                    <p>Cuidamos do seu plano de saúde para você cuidar do que te faz feliz</p>
+                </div>
+            </div>
+            <div class="swiper-slide slide2">
+                <div class="text-box">
+                    <h2>Cuidamos de você</h2>
+                    <p>Para que você possa cuidar daqueles que ama</p>
+                </div>
+            </div>
+            <div class="swiper-slide slide3">
+                <div class="text-box">
+                    <h2>O melhor seguro para você</h2>
+                    <p>Sem burocracia</p>
+                </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <div id="empresa">
+        <h2>Segurança para você e sua família</h2>
+        <p>
+            Somos uma empresa que possui 20 anos de tradição no mercado de planos de saúde. Com muito profissionalismo, integridade, imparcialidade e valorização das pessoas em cada processo do nosso trabalho, hoje atendemos mais de 2000 clientes nos mais variados
+            setores.
+        </p>
+    </div>
+
+    <!--simulation-->
+    <div id="simulation">
+        <div class="title-simulation">
+            <h2>Faça uma simulação</h2>
+        </div>
+        <form id="form-simulation" name="form-simulation" method="post" action="./modules/insert.php?controller=plan">
+
+            <div class="form-row">
+                <div class="cell">
+                    <label for="email">Email</label>
+                    <input name="email" class="form-control" id="email" type="email">
+                </div>
+                <div class="cell cell-right">
+                    <label for="age">Faixa Etária</label>
+                    <select name="age" class="form-control" id="age">
+                            <option value="" disabled selected></option>
+                            <option value="0-18">0-18</option>
+                            <option value="19-23">19-23</option>
+                            <option value="24-28">24-28</option>  
+                            <option value="29-33">29-33</option>  
+                            <option value="34-38">34-38</option>
+                            <option value="39-43">39-43</option>
+                            <option value="44-48">44-48</option>
+                            <option value="49-53">49-53</option>
+                            <option value="54-58">54-58</option>
+                            <option value="59+">59+</option>  
+                        </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="cell">
+                    <label for="phone" required>Telefone/Celular</label>
+                    <input name="phone" class="form-control" id="phone" type="tel">
+                </div>
+                <div class="cell cell-right">
+                    <label for="plan" required>Escolha um plano</label>
+                    <select name="plan" class="form-control" id="plan">
+                    </select>
+                </div>
+
+
+            </div>
+
+            <div id="details">
+                <h3>Detalhes do plano</h3>
+                <div class="text-details">
+                    <p id="operator">Operadora: </p>
+                    <p id="price">Preço: </p>
+                    <p id="modality">Modalidade: </p>
+                    <p id="refund">Reembolso: </p>
+                </div>
+            </div>
+
+            <input name="btn-enviar" onclick="message()" type="submit" value="Enviar" class="btn btn-success">
+        </form>
+    </div>
+    <footer>
+        <p>Developed by Kaique Silva</p>
+        <p>Contact kaiquesilva49@hotmail.com</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>
